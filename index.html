@@ -1,0 +1,801 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device width,initial-scale=1.0">
+        <meta http-equiv="refresh" content="500">
+        <meta name="description" content="The all new Dits coin launching on the 28th of  ">
+
+        <meta name="author" content="Dits">
+
+        <meta name="keyword" content="">
+        <link rel="icon" type="image/x-icon" href="20241016_235213.jpg">
+
+        <title>Dits</title>
+        <style>
+            body{
+                background-color:#1A152B;
+                margin:0;
+                user-select:none;
+            }
+
+            #preloader{
+    background:#1A152B url('20241016_2352212.png') no-repeat center;
+    background-size:30%;
+    height:100vh;
+    width:100%;
+    top:0;
+    position:fixed;
+    z-index:10000000000;
+}
+
+            .firstgodparent{
+                width:100%;
+                background-color: #1A152B;
+                padding-top:10px;
+                position:fixed;
+                top:0;
+                z-index:100000000;
+            }
+
+            .firstparent{
+                column-count:2;
+                width:95%;
+                display:block;
+                margin-left:auto;
+                margin-right: auto;
+                background-color: #1A152B;
+            }
+            
+            .first-parent-child{
+                column-count:3;
+                column-gap:initial;
+            }
+
+            .first-parent-chidi{
+                column-count:3;
+                column-gap:initial;
+            }
+
+            .first-parent-grandchild,  .first-parent-grandchildf{
+                background-color:#352b58 ;
+                text-align:center;
+                border-radius:5px;
+            }
+
+
+            .first-parent-waygrandchild{
+                border-radius:5px;
+                background-color:#005480;
+            }
+
+            .first-parent-grandchildf, .advert{
+                margin-top:-12.5px;
+            }
+
+            .stars{
+                padding-top:5px;
+                color:white;
+                font-family:sans-serif;
+                font-size:12px;
+            }
+
+            .value{
+                color:white;
+                font-family:sans-serif;
+                font-size:18px;
+                margin-top:-10px;
+                margin-right:20px;
+                padding-bottom:5px;
+            }
+
+            .fpwgdivider{
+                column-count:2;
+                padding-top:6px;
+            }
+
+          
+
+            .fpwga{
+                margin-top:-15px;
+            }
+
+            .ton{
+                margin-left:60%;
+               
+            }
+
+
+            .tona{
+                font-weight:bolder;
+               
+            }
+
+            .ton, .tona{
+                color:white;
+                font-family:sans-serif;
+                font-size:14px;
+            }
+            
+
+            .liltoken{
+                width:22px;
+                position:fixed;
+                margin-left:2px;  
+               
+            }
+
+            .liltokenz{
+                width:22px;
+                position:fixed;
+                margin-left:2px; 
+                top:1.8%; 
+               float:right;
+            }
+
+
+            .liltokens{
+               
+                width:18px;
+                position:fixed;
+                margin-left:2px;
+               
+            }
+
+            .liltokena{
+                margin-top:2%; 
+                width:22px;
+                margin-left:px;  
+               
+            }
+
+            .withdiv{
+               margin-top:-28px;
+                color: #005480;
+            }
+
+            .withdraw{
+                text-align:center;
+                background-color:black;
+                color:white;
+                margin-top:-12px;
+                font-family:sans-serif;
+                font-size: 13px;
+                width:50%;
+                display:block;
+                margin-right:auto;
+                margin-left:auto;
+                padding-top:2px;
+                border-radius:200px;
+                border:1.8px solid #ba2b60;
+               
+            }
+
+            .count-down, .road-map{
+                border-radius:5px;
+                background-image:linear-gradient(to right, #fba939, #ba2b60 );
+                padding:1px;
+                margin-top:20px;
+            }
+
+            .advert{
+                outline:1px solid gold;
+                border-radius:5px;
+            }
+
+            .outline{
+                background-color: #1A152B;
+                border-radius:5px;
+                margin-top:-12px;
+                margin-bottom:-12px;
+            }
+
+          
+
+            .counts, .funds{
+                color:white;
+                font-family:sans-serif;
+                font-size:12px;
+                font-weight:lighter;
+            }
+
+            
+            .counts{
+                padding-top:5px;
+            }
+
+            .funds{
+                margin-top:-8px;
+                padding-bottom:5px;
+            }
+
+            .radam, .dropdate{
+                font-family:sans-serif;
+                font-size:12px;
+                text-align:center;
+                font-weight:lighter;
+            }
+
+            .radam{
+                color:#3bda1e;
+                padding-top:5px;
+            }
+
+            .dropdate{
+                color:white;
+                margin-top:-8px;
+                padding-bottom:5px;
+                font-weight:bolder;
+            }
+
+            .dropdot, .dropdotd{
+                display:none;
+            }
+
+            @media screen and (max-width:650px){
+                .firstparent{
+                    column-count:1;
+                }
+
+                .first-parent-chidi{
+                    column-count:1;
+                }
+
+                .stars{
+                    font-size:14px;
+                }
+
+                .ton{
+                margin-left:30%;
+            }
+
+            .tona{
+                text-align:center;
+            }
+
+            .liltokenz{
+                top:1.1%;
+                margin-left:2%;
+            }
+
+
+                .count-down{
+                    padding-bottom:12px;
+                    margin-bottom:10px;
+                }
+
+                .counts{
+                    font-size:21px;
+                    letter-spacing:-1px;
+                    padding-top:0px;
+                }
+
+                .funds{
+                    font-size:22px;
+                }
+
+                .counts, .funds{
+                    margin-left:2.5%;
+                }
+
+                .radam, .dropdate{
+                    font-size:22px;
+                }
+
+                .dropdate{
+                    margin-top:-20px;
+                }
+
+                .dropdot, .dropdotd{
+                display:block;
+                color:#1A152B;
+                font-size:3px;
+              
+            }
+
+            .dropdot{
+                margin-top:14px;
+                margin-bottom:-16px;
+            }
+
+            .dropdotd{
+                margin-top:-22px;
+            }
+
+            .outline{
+                margin-left:2px;
+                margin-right:2px;
+            }
+                
+                .road-map{
+                    padding:1px;
+                    padding-bottom:12px;
+                    margin-top:-0.2px;
+                }
+                .radam{
+                    padding-top:-2px;
+                    
+                }
+            }
+
+            .navholders{
+                width:100%;
+                background-color: #1A152B;
+                position: fixed;
+                border-top:1px solid white;
+                bottom:0;
+                z-index:600000000;
+            }
+
+            .nav{
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+    font-family:sans-serif;
+    display:flex;
+    justify-content: space-around;
+    background:#1A152B;
+    align-items: center;
+    z-index:2000000;
+    
+}
+
+.iconhold a{
+    text-decoration:none;
+}
+
+.iconhold{
+    margin-top:10px;
+    border-left:1px solid #8f74ed;
+    margin-bottom:10px;
+    transition:0.4s;
+}
+
+.iconhold:hover .navicons{
+    filter:brightness(0) invert(1);
+    transition:0.5s;
+}
+
+#iconhold{
+    border-right:1px solid #8f74ed;
+}
+
+.navicons{
+    margin-left:auto;
+    margin-right:auto;
+    width:15%;  
+    display:block;
+    margin-bottom:-10px;
+}
+
+.iconwords{
+    color:#8f74ed;
+    font-size:12px;
+    font-family:sans-serif;
+    text-align:center;
+
+}
+
+.iconhold:hover .iconwords{
+    color:white;
+    transition:0.5s;
+}
+
+            .taptapdivider{
+                column-count:2;
+                margin-left:2.5%;
+                margin-right:2.5%;
+                margin-top:5%;
+            }
+
+
+            .ditstap{
+                width:60%;
+                margin-left:auto;
+                margin-right:auto;
+                display: block;
+                overflow:hidden;
+                margin-bottom:-25px;
+            }
+
+            .ditsvalue{
+                font-size:40px;
+                font-family:sans-serif;
+                color:white;
+                
+                text-align:center;
+            }
+
+            #ditsvalue{
+                font-weight:bolder;
+            }
+
+
+
+            @media screen and (max-width:650px){
+                .taptapdivider{
+                column-count:1;
+                margin-left:2.5%;
+                margin-right:2.5%;
+                margin-top:80%;
+                margin-bottom:20%;
+            }
+
+            .ditstap{
+                width:40%;
+            }
+
+            
+
+            .nav{
+    width:95%;
+    margin-left:2.5%;
+    margin-right:2.5%;
+}
+
+
+
+.iconhold{
+    margin-top:10px;
+    border-left:1px solid #8f74ed;
+    margin-bottom:10px;
+}
+
+#iconhold{
+    border-right:1px solid #8f74ed;
+}
+
+.navicons{
+    margin-left:auto;
+    margin-right:auto;
+    width:25%;  
+    display:block;
+    margin-bottom:-10px;
+}
+            }
+
+         
+
+            .valuedata{
+                background-color: #352b58;
+                width:100%;
+                border-radius:5px;
+            }
+
+            .valuedatachild{
+                width:90%;
+                column-count:3;
+                column-fill: balance;
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+               
+            }
+            
+            .reward{
+                margin-top:-25px;
+            }
+
+            .rewards, .reward{
+                text-align:center;
+                
+            }
+
+            .figure{
+                margin-top:-20px;
+                color:white;
+                margin-left:px;
+                font-size:25px;
+                font-family:sans-serif;
+                margin-bottom:-15px;
+            }
+
+            .mining, .task, .invites{
+                padding-top:5px;
+                color: #8f74ed;
+                font-size:25px;
+            }
+
+            @media screen and (max-width:650px){
+                .liltokena{
+                    margin-top:1%;
+                }
+            }
+
+            .dpass{
+                background-color:white;
+                text-align:center;
+                font-weight:bolder;
+                font-family:sans-serif;
+                font-size:20px;
+                padding-top:10px;
+                padding-bottom:10px;
+                border-radius:5px;
+            }
+
+            .geaccess{
+                margin-top:-10px;
+                text-align:center;
+                font-family:'courier New';
+                font-size:18px;
+                color:white;
+            }
+
+            .dtrade{
+                background-color:rgb(255, 174, 0);
+                text-align:center;
+                font-weight:bolder;
+                font-family:sans-serif;
+                font-size:20px;
+                padding-top:10px;
+                padding-bottom:10px;
+                border-radius:5px;
+            }
+
+            .tasker{
+                font-family:'Courier New';
+                font-size:20px;
+                color:white;
+            }
+
+
+            .tbar{
+                display:flex;
+                background-color: #282142;
+                border-radius:5px;
+                margin-bottom:10px;
+            }
+
+            .logobar{
+                width:10%;
+            }
+
+            .ditsword{
+                width:70%;
+            }
+
+            .claimer{
+                width:20%;
+            }
+
+            .taskicons, .taskicon{
+                width:90%;
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+            }
+
+            .taskicon{
+                filter: brightness(0) invert(1);
+            }
+
+            .dword{
+                font-family:sans-serif;
+                font-size:14px;
+                margin-left:10%;
+                color:white;
+            }
+
+            .claim{
+                margin-left:2.5%;
+                margin-right:2.5%;
+                background-color:black;
+                color:white;
+                font-family:sans-serif;
+                border:2px solid #ba2b60;
+                text-align:center;
+                border-radius:200px;
+                padding-top:5px;
+                padding-bottom:5px;
+            }
+            
+        </style>
+    </head>
+    <body>
+
+        <div id="preloader"></div>
+
+        <div class="firstgodparent">
+        <div class="firstparent">
+
+<div class="first-parent-child">
+
+<div class="first-parent-grandchildf">
+<p class="stars">$DITS</p>
+<p class="value" id="firstvalue">0 <img src="20241016_235221.png" class="liltoken"></p>
+</div>
+
+<div class="first-parent-grandchild">
+    <p class="stars">$DITSTARS</p>
+    <p class="value" id="firstvalue">0 <img src="20241030_034351.png" class="liltokens"></p>
+</div>
+
+<div class="first-parent-waygrandchild">
+
+    <div class="fpwgdivider">
+<div class="fpwga"><p class="ton">0.00 <img src="20241030_034315.png" class="liltokenz"></p></div>
+<div class="fpwgc"><p class="tona">TON</p></div>
+</div>
+
+<p class="withdraw">withdraw</p>
+<p class="withdiv">.</p>
+
+</div>
+
+</div>
+
+<div class="first-parent-chidi">
+
+    <div class="advert"><p class="">Days to Airdrop:<b><span class="days">00</span>d <span class="hours">00</span>h 
+        <span class="minutes">00</span>m <span class="secods">00</span>s</b></p>
+    </div>
+
+
+    <div class="count-down"><div class="outline">
+        <p class="dropdot">.</p>
+        <p class="counts">Days to Airdrop: <b><span id="days">00</span>d <span id="hours">00</span>h 
+        <span id="minutes">00</span>m <span id="seconds">00</span>s</b></p>
+    
+        <p class="funds">Airdrop fund: <b>$1,800,000</b></p>
+        <p class="dropdotd">.</p>
+    </div>
+    </div>
+
+
+    <div class="road-map">
+        <div class="outline">
+            <p class="dropdot">.</p>
+        <p class="radam">Road map</p>
+        <p class="dropdate">Airdrop March 2nd</p>
+        <p class="dropdotd">.</p>
+    </div>
+    </div>
+
+</div>
+
+        </div>
+</div>
+
+<div class="navholders">
+<div class="nav" id="nav">
+
+    <div class="iconhold">
+        <a href="../../index.html"><img src="20241030_033739.png" class="navicons">
+        <p class="iconwords">Airdrop</p></a>
+    </div>
+
+    <div class="iconhold">
+    <a href="../jetrixproducts.html"><img src="20241030_033702.png"  class="navicons">
+     <p class="iconwords">Earning</p></a>
+    </div>
+     
+    <div class="iconhold">
+    <a href="../../index.html"><img src="20241030_033812.png"  class="navicons">
+        <p class="iconwords">Home</p></a>
+    </div>
+
+    <div class="iconhold">
+    <a href="../jetrixproducts.html"><img src="20241030_033845.png"  class="navicons">
+        <p class="iconwords">Tasks</p></a>
+    </div>
+
+    <div class="iconhold" id="iconhold">
+    <a href="../../index.html"><img src="20241030_033558.png"  class="navicons">
+        <p class="iconwords">Friends</p></a>
+        </div>
+
+ </div>
+ </div>
+
+
+
+
+<div class="taptapdivider">
+
+<div class="taptapditspc">
+<img class="ditstap" src="20241016_2352212.png">
+<p class="ditsvalue"><span id="ditsvalue">0</span> DITS</p>
+</div>
+
+<div class="valuedataparent">
+
+<div class="valuedata">
+    
+    <div class="valuedatachild">
+<div class="reward">
+    <p class="mining">Harvest</p>
+    <p class="figure" id="mining">0 <img src="20241016_235221.png" class="liltokena"></p>
+</div>  
+
+<div class="rewards">
+    <p class="task">Task</p>
+    <p class="figure" id="task">0 <img src="20241016_235221.png" class="liltokena"></p>
+</div>  
+
+<div class="rewards">
+    <p class="invites">Invites</p>
+    <p class="figure" id="invites">0 <img src="20241016_235221.png" class="liltokena"></p>
+</div>  
+
+</div>
+
+
+</div>
+
+<p class="dpass">DITS PASS</p>
+<p class="geaccess">Get access to exclusive harvest</p>
+<p class="dtrade">BEGIN TRADING</p>
+<p class="tasker">Task</p>
+
+<div class="generaltaskavation">
+    <div class="tbar">
+        <div class="logobar"><img src="20230203_181045.png" class="taskicons"></div>
+        <div class="ditsword"><p class="dword">Spin the Slot Machine at Least 10 Times</p></div>
+        <div class="claimer"><p class="claim">Claim</p></div>
+    </div>
+
+    <div class="tbar">
+        <div class="logobar"><img src="20230203_181045.png" class="taskicons"></div>
+        <div class="ditsword"><p class="dword">Spin the Slot Machine at Least 10 Times</p></div>
+        <div class="claimer"><p class="claim">Claim</p></div>
+    </div>
+
+    <div class="tbar">
+        <div class="logobar"><img src="20241030_033845.png" class="taskicon"></div>
+        <div class="ditsword"><p class="dword">Spin the Slot Machine at Least 10 Times</p></div>
+        <div class="claimer"><p class="claim">Go</p></div>
+    </div>
+</div>
+
+</div>
+</div>
+
+<script>
+
+    var loader = document.getElementById("preloader");
+    
+    window.addEventListener('load', function(){
+        loader.style.display = "none";
+    })
+    
+    </script>   
+    
+
+        <script>
+            var countdowndate = new Date("March 2, 2025 12:00:00").getTime();
+            var x = setInterval(function(){
+                var now = new Date().getTime();
+                var distance = countdowndate - now;
+        
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+                document.getElementById("days").innerHTML = days;
+                document.getElementById("hours").innerHTML = hours;
+                document.getElementById("minutes").innerHTML = minutes;
+                document.getElementById("seconds").innerHTML = seconds;
+            },1000);
+        </script>
+        
+        <script>
+            import { Client, Databases } from "appwrite";
+
+            const client = new Client()
+                .setEndpoint('https://cloud.appwrite.io/v1') // Your API Endpoint
+                .setProject('<YOUR_PROJECT_ID>'); // Your project ID
+
+            const databases = new Databases(client);
+
+            const result = await databases.listDocuments(
+                '<DATABASE_ID>', // databaseId
+                '<COLLECTION_ID>', // collectionId
+                [] // queries (optional)
+            );
+
+            console.log(result);
+
+        </script>
+
+    </body>
+</html>
