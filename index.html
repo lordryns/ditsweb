@@ -807,10 +807,10 @@
         var converted = JSON.parse('{"' + search.replace(/&/g, '","').replace(/=/g, '":"') + '"}', function (key, value) { 
             return key === "" ? value : decodeURIComponent(value) 
         })
-        converted = JSON.parse(converted.user)
+       userData = JSON.parse(converted.user)
 
         const testp = document.getElementById("testp");
-        testp.innerHTML = typeof converted.id;
+        testp.innerHTML = userData.id;
     </script>
 
 
