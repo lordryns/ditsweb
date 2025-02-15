@@ -758,6 +758,13 @@
     })
     
     </script>   
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const telegramData = Object.fromEntries(urlParams.entries());
+
+        console.log(telegramData); // Contains id, username, auth_date, hash, etc.
+    </script>
     
 
         <script>
@@ -777,6 +784,7 @@
                 document.getElementById("seconds").innerHTML = seconds;
             },1000);
         </script>
+
         
         <script src="/script.js"></script>
 
