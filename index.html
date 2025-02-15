@@ -687,13 +687,14 @@
  </div>
 
 
+ 
 
 
 <div class="taptapdivider">
 
 <div class="taptapditspc">
 <img class="ditstap" src="20241016_2352212.png">
-<p class="ditsvalue"><span id="ditsvalue">0</span> DITS</p>
+<p class="ditsvalue"><span id="ditsvalue"><p id="testp">one</p></span> DITS</p>
 </div>
 
 <div class="valuedataparent">
@@ -766,6 +767,9 @@
 
         console.log(telegramData); // Contains id, username, auth_date, hash, etc.
         console.log(telegramData.id);
+
+        const testp = document.getElementById("testp");
+        testp.innerHTML = telegramData + " " + telegramData.id;
     </script>
     
 
